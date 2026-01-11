@@ -5,10 +5,12 @@
 #ifndef SPI_H
 #define SPI_H
 
-#include "stm32f4xx_hal.h"
+#include <stm32f446xx.h>
+#include "stm32f4xx_hal_spi.h"
 
-static void spi_init(void);
+extern SPI_HandleTypeDef hspi2;
 
-static void spi_deinit(void);
+void spi_init(void);
+void spi_deinit(void);
 
 #endif /* SPI_H */
